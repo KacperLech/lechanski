@@ -70,3 +70,6 @@ print(surname[:]) #Kowalski
 print(surname[:-2]) #Kowals
 print(surname[:-2:2]) #kwl
 
+
+#komentarz
+
