@@ -8,3 +8,5 @@ To jest komentarz blokowy
 tab = text.split(", ")
 print(text)
 print(tab)
+
+print(type(tab))
