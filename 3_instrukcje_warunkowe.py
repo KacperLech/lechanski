@@ -6,3 +6,4 @@ if x==5:
 else:
     print('x jest różny od 5')
     print(f'zmienna x wynosi: {x}')
+#elif
