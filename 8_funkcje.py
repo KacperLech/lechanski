@@ -23,19 +23,29 @@ Model:....
 Pojemnosc:....
 Predkosc maksymalna:....
 '''
-def data():
-    print('Podaj markę: ', end='')
-    marka=input()
-    print('Podaj model: ', end='')
-    model=input()
-    print('Podaj pojemność: ', end='')
-    pojemnosc=input()
-    print('Podaj prędkość maksymalną: ', end='')
-    predkoscMax=input()
+def give(marka, model, pojemnosc, predkoscMax, car):
+    marka=input('Podaj markę: ')
+    model=input('Podaj model: ')
+    pojemnosc=input('Podaj pojemnosc: ')
+    predkoscMax=input('Podaj prędkość maksymalną: ')
 
-    #wpisujemy dane ze zmiennych do słownika
     car={'marka':marka, 'model':model, 'pojemnosc':pojemnosc, 'predkoscMax':predkoscMax}
-    #print(car)
-    
-data()
+    return marka, model, pojemnosc, predkoscMax, car
+
+def view(car):
+    key = 'marka'
+    for key, value in car.items():
+        print(f'{key}:{value}')
+
+
+#inicjalizacja zmiennych    
+marka=0
+model=0    
+pojemnosc=0    
+predkoscMax=0
+car=0
+#wywołanie funkcji    
+marka, model, pojemnosc, predkoscMax, car = give(marka, model, pojemnosc, predkoscMax, car)
+car=view(car)
+
     
