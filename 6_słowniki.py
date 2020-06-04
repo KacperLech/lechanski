@@ -18,3 +18,25 @@ print(worker)
 print(worker['namesChildren'])
 print('Dziecko 1: ' + worker['namesChildren'][0])
 print('Dziecko 2: ' + worker['namesChildren'][1])
+
+worker['height']=180
+worker['weight']=90
+print(worker)
+
+#sprawdzenie czy jest taki klucz
+key='age'
+
+if key in worker:
+    del worker[key]
+    print(f'Klucz o nazwie {key} został usunięty')
+else:
+    print(f'Klucz o nazwie {key} nie został znaleziony')
+
+#wyświetlenie samych wartości słownika
+print(worker.values())
+#klucz oraz wartość
+print(worker.items())
+print()
+
+for key, value in worker.items():
+    print(f'{key}: {value}')
