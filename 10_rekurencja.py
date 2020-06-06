@@ -1,15 +1,13 @@
 #potęgowanie
 
 
-def potegowanie(x, y):
-    if y == 1 :
-        return x
+def potega(podstawa, wykladnik):
+    if wykladnik == 0:
+        return 1
     else:
-        p = potegowanie(x, y-1)
-        return x * p
+        return podstawa * potega(podstawa, wykladnik - 1)
 
-
-print(potegowanie(3,4))
+print(potega(3, 3))
 
 '''
 pow(3, 3) -->
