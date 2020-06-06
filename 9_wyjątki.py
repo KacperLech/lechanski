@@ -10,3 +10,19 @@ def div(x, y):
 
 print(div(2, 3))
 #div(2,0)
+
+print()
+
+# Użytkownik podaje wartość z klawiatury do momentu wpisania liczby całkowitej
+# wykorzystaj pętlę while i wyjątek
+
+while True:
+    intTest=input("Wpisz liczbę całkowitą: ")
+    try:
+        intTest=int(intTest)
+        break
+    except ValueError:
+        pass
+    print("Poprawny typ danych")
+    finally:
+        print('koniec pętli')
